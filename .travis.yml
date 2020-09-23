@@ -42,6 +42,36 @@ matrix:
       osx_image: xcode7.3
       compiler: clang
       env: LIBTOOLIZE=glibtoolize
+      
+      
+    - os: linux
+      arch: ppc64le
+      compiler: gcc-7
+      addons:
+        apt:
+          packages: ['gcc-7', 'automake', 'autoconf', 'libtool', 'shtool', 'libsqlite3-dev', 'python-sphinx', 'texinfo', 'libhyperscan-dev']
+
+    - os: linux
+      arch: ppc64le      
+      compiler: gcc-8
+      addons:
+        apt:
+          packages: ['gcc-8', 'automake', 'autoconf', 'libtool', 'shtool', 'libsqlite3-dev', 'python-sphinx', 'texinfo', 'libhyperscan-dev']
+
+    - os: linux
+      arch: ppc64le
+      compiler: clang-7
+      addons:
+        apt:
+          packages: ['clang-7', 'automake', 'autoconf', 'libtool', 'shtool', 'libsqlite3-dev', 'python-sphinx', 'texinfo', 'libhyperscan-dev']
+
+    - os: linux
+      arch: ppc64le
+      compiler: clang-8
+      addons:
+        apt:
+          packages: ['clang-8', 'automake', 'autoconf', 'libtool', 'shtool', 'libsqlite3-dev', 'python-sphinx', 'texinfo', 'libhyperscan-dev']
+
 
 cache:
   apt:
